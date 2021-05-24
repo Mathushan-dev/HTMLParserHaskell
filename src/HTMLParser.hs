@@ -116,8 +116,9 @@ tagOccurences t [] = 0
 tagOccurences t (x : xs) | x == t = 1 + tagOccurences t xs
                          | otherwise = tagOccurences t xs
 
+main :: IO ()
 main = do  
-   let file = "file.txt" 
+   let file = "file.html" 
    contents <- readFile file 
    let tags = words (getTags contents)
    checkSemantics (removeSpecial tags)
