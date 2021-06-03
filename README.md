@@ -1,2 +1,2 @@
 # HTMLParserHaskell
-A basic HTML parser in c
+A basic HTML parser in Haskell
